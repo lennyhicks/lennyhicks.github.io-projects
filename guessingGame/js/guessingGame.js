@@ -50,12 +50,12 @@ function guessNumbers() {
     debug("Guess Two = " + guessTwo);
     debug("Guess Three = " + guessThree);
 
-    guessCount--;
-    debug(guessCount);
+
     debug("Number One = " + numberOne + ". Number Two = " + numberTwo + ". Number Three = " + numberThree);
     //Check your Guesses
     if (guessOne != guessTwo && guessOne != guessThree && guessTwo != guessThree) {
-
+        guessCount--;
+        debug(guessCount);
         //Check All Guesses
         if (guessOne == numberOne && guessTwo == numberTwo && guessThree == numberThree) {
             $("#guessOne").attr("class", "col-md-2 col-md-push-3 input right");

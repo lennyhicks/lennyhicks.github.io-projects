@@ -111,13 +111,16 @@ function guessNumbers() {
                 $("#guessThree").attr("class", "col-md-2 col-md-push-3 input otherWrong");
             }
         }
+        if (guessOne != numberOne || guessTwo != numberTwo || guessThree != numberThree) {
+            $('#guessLeft').text("Not all numbers are matching. " + guessCount + " guesses remaining.");
+        }
 
     } else {
-        debug("Please enter different numbers")
+        debug("Please enter different numbers");
+
+        $('#guessLeft').text("Please enter numbers that do not match.");
     }
-    if (guessOne != numberOne || guessTwo != numberTwo || guessThree != numberThree) {
-        $('#guessLeft').text("Not all numbers are matching. " + guessCount + " guesses remaining.");
-    }
+
 }
 
 function resetGame() {

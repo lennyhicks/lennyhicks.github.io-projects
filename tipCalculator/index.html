@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/tipCalculator.css">
+
+    <script type="text/javascript" src="js/tipCalculator.js"></script>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-4 col-md-push-4 back ">
+                <div class="titleText col-md-12">Tip Calculator</div>
+                <div class="otherText col-md-12">How much was your Bill?<br>
+                    <input id="billAmount" class="inputBox" maxLength="6"></input>
+                </div>
+
+                <div class="otherText col-md-12">How good was your service?
+                    <select id="dropDown">
+                        <option value=".30">30% - Outstanding!</option>
+                        <option value=".20">20% - Good</option>
+                        <option value=".15">15% - It was okay</option>
+                        <option value=".10">10% - Bad</option>
+                        <option value=".5">5% - Terrible</option>]
+                    </select>
+                </div>
+
+                <div class="otherText col-md-12">How many people are Sharing the bill?
+
+                    <input id="peopleSharing" class="inputBox" onkeypress='validate(event)'></input> People
+                </div>
+                <div class=" col-md-12">
+                    <button id="calculate" class="btn btn-danger col-md-12">Calculate the Bill.</button>
+                </div>
+                <div class=" col-md-12">
+                    <span id="tipAmount" class="totalText"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

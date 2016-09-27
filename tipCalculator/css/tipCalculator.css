@@ -1,0 +1,40 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.back {
+    height: 100%;
+    background-color: darkcyan;
+    border-radius: 20px;
+}
+
+.titleText {
+    font-size: 30pt;
+    text-align: center;
+}
+
+.otherText {
+    font-size: 15pt;
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+}
+
+.inputBox {
+    text-align: center;
+    width: 30%;
+    height: 35px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid black;
+}
+
+button {
+    margin-top: 20px;
+}
+
+.totalText {
+    text-align: center;
+    font-size: 14pt;
+}

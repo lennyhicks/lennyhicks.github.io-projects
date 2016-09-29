@@ -27,12 +27,13 @@ function calculateTip() {
     var billAmount = $('#billAmount').val();
     var peopleSharing = $('#peopleSharing').val();
     var dropDown = $('#dropDown').val();
+
+    billAmount = billAmount == "" ? "0.00" : billAmount;
+    peopleSharing = peopleSharing == "" ? "1" : peopleSharing;
     if (billAmount == "" || peopleSharing == "") {
         debug("Check");
         $('#tipAmount').text("Please Complete all Fields");
     } else {
-        billAmount = billAmount == "" ? "0.00" : billAmount;
-        peopleSharing = peopleSharing == "" ? "1" : peopleSharing;
 
         debug(billAmount);
         debug(dropDown);

@@ -45,7 +45,6 @@ function debug(msg) {
 function takeTurn(box) {
     
     if (isOccupied[box] < 1) {
-        turnCount++
         if (oTurn) {
             $('#' + box).text("O");
             debug("O placed in box " + box);
@@ -65,6 +64,7 @@ function takeTurn(box) {
             $('#turnText').text("X's Turn");
         }
         checkWin();
+                turnCount++
     } else {
         debug("Please choose another box.")
     }

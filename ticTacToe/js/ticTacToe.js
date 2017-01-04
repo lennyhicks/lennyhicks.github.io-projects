@@ -43,9 +43,10 @@ function debug(msg) {
 }
 
 function takeTurn(box) {
-    turnCount++
 
     if (isOccupied[box] < 1) {
+        turnCount++
+
         if (oTurn) {
             $('#' + box).text("O");
             debug("O placed in box " + box);
